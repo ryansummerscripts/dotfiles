@@ -8,7 +8,8 @@ clear
 # Note:
 # - For Intel, just comment out the last 3 lines under 'Apple Intelligence'.
 # - For VM's using UTM, enabling/disabling Time Machine Auto Backup does not work.
-#   If not using UTM & you want to disable Time Machine Auto Backup, uncomment the line below under '💾 [Disks]'.
+#   If not using UTM & you want to disable Time Machine Auto Backup, uncomment the last line under '💾 [Disks]'.
+# - To see all available options not shown here, please check out the MacOS Defaults menu option in my tool here:
 
 # Colors and formatting
 BO=$'\033[1m'
