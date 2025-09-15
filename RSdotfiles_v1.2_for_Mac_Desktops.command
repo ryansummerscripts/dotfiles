@@ -410,6 +410,20 @@ defaults write com.apple.TextEdit NSFixedPitchFontSize -int 14
 
 echo "👾 [Terminal]"
 defaults write com.apple.Terminal NSWindowTabbingShoudShowTabBarKey-TTWindow-TTWindowController-TTWindowController-VT-FS -bool true
+defaults write com.apple.Terminal UseBrightBold -bool true    # Uses bright colors for bold text"
+
+echo "📅 [Calendar]"
+defaults write com.apple.iCal "TimeZone support enabled" -bool true    # Enables TimeZone Support
+
+echo "💬 [Messages]"
+defaults write com.apple.imagent Setting.EnableReadReceipts -bool false    # Disables Send Read Receipts (1 of 2)
+defaults write com.apple.imagent Setting.GlobalReadReceiptsVersionID -int 2    # Disables Send Read Receipts (2 of 2)
+
+echo "🔎 [Preview]"
+defaults write com.apple.Preview NSWindowTabbingShoudShowTabBarKey-PVWindow-PVWindowController-PVWindowController-VT-FS -bool true    # Shows Tab Bar by default in Preview
+
+echo "🎵 [Music]"
+defaults write com.apple.Music optimizeSongVolume -bool false    # Disables Sound Check/Normalization
 
 echo "🗜️  [Archive Utility]"
 defaults write com.apple.archiveutility dearchive-move-after "~/.Trash"
@@ -429,6 +443,7 @@ echo "   [Safari - Tabs]"
 defaults write ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari EnableNarrowTabs -bool false
 defaults write ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari ShowStandaloneTabBar -bool true
 defaults write ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari CloseTabsAutomatically -bool false
+defaults write ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari CommandClickMakesTabs -bool true
 defaults write ~/Library/Containers/com.apple.Safari/Data/Library/Preferences/com.apple.Safari OpenNewTabsInFront -bool false
 
 echo "   [Safari - AutoFill]"
