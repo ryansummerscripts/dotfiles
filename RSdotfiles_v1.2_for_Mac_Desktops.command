@@ -200,7 +200,7 @@ defaults write NSGlobalDomain AppleShowScrollBars -string Always
 defaults write NSGlobalDomain AppleScrollerPagingBehavior -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
-defaults write NSGlobalDomain NSCloseAlwaysConfirmsChanges -bool true
+# defaults write NSGlobalDomain NSCloseAlwaysConfirmsChanges -bool false    # Enabled by defaults
 defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool true
 defaults -currentHost write com.apple.universalcontrol Disable -bool true
 # defaults write com.apple.dashboard mcx-disabled -bool true    # depreciated/no longer used on newer macOS's
