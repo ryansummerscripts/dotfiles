@@ -141,8 +141,8 @@ echo
 # 2 fo 2 # defaults write NSGlobalDomain AppleMenuBarVisibleInFullscreen -bool true    # 2 of 2 - Never hides the menu bar when in full screen
 # defaults write com.apple.Spotlight SPPasteboardFTEEngaged -bool true    # Enable Spotlight's Clipboard Manager/Search
 # defaults write com.apple.Spotlight PasteboardHistoryTimeout -int 86400    # Increase Clipboard history from 8hrs to 24hrs (Untested)"
-# defaults read com.apple.finder SidebarWidth -int 135    # Tahoe 26+
-# defaults read com.apple.finder FK_SidebarWidth -int 135    # Tahoe 26+
+# defaults read com.apple.finder SidebarWidth2 -int 135    # Tahoe 26+
+# defaults read com.apple.finder FK_SidebarWidth2 -int 135    # Tahoe 26+
 
 echo "🆕 [NEW for macOS Sequoia 15]"
 defaults write com.apple.WindowManager EnableStandardClickToShowDesktop -bool false
