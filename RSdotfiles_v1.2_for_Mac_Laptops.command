@@ -138,7 +138,7 @@ echo
 # defaults write com.apple.Preview PVMarkupToolbarVisibleForPDFs -bool true   # Shows Markup toolbar for PDFs by default
 # defaults write com.apple.Preview PVMarkupToolbarVisibleForImages -bool true   # Shows Markup toolbar for images by default
 # 1 of 2 # defaults write com.apple.controlcenter AutoHideMenuBarOption -int 3    # 1 of 2 - Never hides the menu bar when in full screen
-# 2 fo 2 # defaults write NSGlobalDomain AppleMenuBarVisibleInFullscreen -bool true # 2 of 2 - Never hides the menu bar when in full screen
+# 2 fo 2 # defaults write NSGlobalDomain AppleMenuBarVisibleInFullscreen -bool true    # 2 of 2 - Never hides the menu bar when in full screen
 # defaults write com.apple.Spotlight SPPasteboardFTEEngaged -bool true    # Enable Spotlight's Clipboard Manager/Search
 # defaults write com.apple.Spotlight PasteboardHistoryTimeout -int 86400    # Increase Clipboard history from 8hrs to 24hrs (Untested)"
 # defaults read com.apple.finder SidebarWidth -int 135    # Tahoe 26+
@@ -151,6 +151,7 @@ defaults write com.apple.WindowManager EnableTopTilingByEdgeDrag -bool false
 defaults write com.apple.WindowManager EnableTilingOptionAccelerator -bool true
 defaults write com.apple.WindowManager EnableTiledWindowMargins -bool false 
 defaults write com.apple.Passwords EnableMenuBarExtra -bool true
+defaults write com.apple.Passwords.MenuBarExtra "NSStatusItem Visible Item-0" -bool true
 
 # disable Apple Intelligence
 # key is different on each machine
@@ -649,6 +650,7 @@ killall ControlCenter 2>/dev/null || true
 killall UniversalAccessApp 2>/dev/null || true
 killall cfprefsd 2>/dev/null || true
 sleep 2
+echo
 echo "✅ ${BO}Done!${NC}"
 echo
 echo "⚠️  ${YE}Note that some of these changes require a restart in order to take effect.${NC}"

@@ -241,9 +241,6 @@ defaults write com.apple.finder ShowRecentTags -bool false
 defaults write com.apple.finder SidebarWidth -int 143
 defaults write com.apple.finder FK_SidebarWidth -int 143
 
-
-# Expand/collapse the following File Info panes:
-
 # add custom keyboard shortcuts for all apps - this needs more testing
 # defaults write com.apple.finder NSUserKeyEquivalents '{
 #     "Get Info" = "@~i";
